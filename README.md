@@ -11,6 +11,6 @@ git clone https://github.com/betaflight/betaflight.git
 cd betaflight
 git checkout 4.5.2
 make arm_sdk_install
-rm -rf src/config/ && git clone https://github.com/airmod-sas/config.git -b add-airdronef405 src/config/
+rm -rf src/config/ && git clone https://github.com/Airmod-SAS/betaflight-config.git -b add-airdronef405 src/config/
 make AIRDRONEF405
 ```

@@ -50,6 +50,9 @@ cd ~/workspace/airmod/Betaflight\ Configurator/
 some preset have been defined to simplify the configuration
 
 - copy the _AIRDRONEF405_PRESET.txt_ file from this repository
+```bash
+wget https://github.com/Airmod-SAS/airdroneF405/blob/main/AIRDRONEF405_PRESET.txt
+```
 - run Betaflight configurator
 - connect the board
 - go to __Presets__ menu

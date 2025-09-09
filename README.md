@@ -1,8 +1,10 @@
 # airdroneF405
 
-## How to build 
+Current documentation made for Ubuntu environment
 
-### Prepare the environement 
+## How to build
+
+### Prepare the environement
 this should be done only once
 ```bash
 sudo apt update && sudo apt upgrade
@@ -25,3 +27,31 @@ git pull
 cd ../..
 make AIRDRONEF405
 ```
+
+## How to configure
+
+### install Betaflight-configurator
+
+```bash
+cd ~/workspace/airmod/
+wget https://github.com/betaflight/betaflight-configurator/releases/download/10.10.0/betaflight-configurator_10.10.0_linux64-portable.zip
+unzip betaflight-configurator_10.10.0_linux64-portable.zip
+```
+
+### run Betaflight-configurator
+
+```bash
+cd ~/workspace/airmod/Betaflight\ Configurator/
+./betaflight-configurator
+```
+
+### load preset
+
+some preset have been defined to simplify the configuration
+
+- copy the _AIRDRONEF405_PRESET.txt_ file from this repository
+- run Betaflight configurator
+- connect the board
+- go to __Presets__ menu
+- click on __Load backup__
+- load _AIRDRONEF405_PRESET.txt_
